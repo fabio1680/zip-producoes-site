@@ -86,163 +86,128 @@
 
 
 
+```html
 <!-- ===================================================== -->
 <!-- INÍCIO -->
 <!-- ===================================================== -->
 
-<section id="inicio">
+<section id="inicio" class="inicio-section">
 
-    <div class="container py-3">
+    <div class="container py-4">
 
-        <h1 class="text-center fw-bold mb-2">
-            ZIP PRODUÇÕES
-        </h1>
+        <!-- LOGO ANIMADA -->
+        <div class="text-center mb-4">
 
-        <p class="lead" text-center mb-3>
-    Há mais de 15 anos, a ZIP Produções transforma momentos únicos em
-    histórias que permanecem para sempre. Trabalhamos com dedicação,
-    criatividade e profissionalismo para registrar cada detalhe dos
-    momentos mais importantes da sua vida.
-</p>
+            <h1 class="logo-zip">
+                <span>ZIP</span> PRODUÇÕES
+            </h1>
 
-<p>
-    Seja em casamentos, festas de 15 anos, aniversários, eventos,
-    formaturas, celebrações ou ensaios fotográficos, nossa missão é
-    capturar cada emoção, cada sorriso e cada instante de forma especial,
-    proporcionando registros de alta qualidade para que você possa
-    reviver essas memórias por muitos e muitos anos.
-</p>
-
-    DESCONTOS ESPECIAIS DE 10% PARA CLIENTES QUE CONTRATAREM NOSSOS SERVIÇOS ATÉ O FINAL DESTE MÊS!
-        <!-- ================================================= -->
-        <!-- 3 FOTOS -->
-        <!-- ================================================= -->
-
-        <div class="row mt-3 g-4">
-
-
-            <!-- ================= CASAMENTO ================= -->
-
-<section class="galeria-eventos py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-3">
-
-            <h2 class="fw-bold mb-2">
-                Nossos Eventos:
-            </h2>
-
-            <p class="text-muted mb-2">
-            “Transformamos momentos especiais em histórias que permanecem para sempre. Com qualidade, profissionalismo e dedicação,
-            </p> registramos cada detalhe para que você possa reviver suas melhores lembranças.”            </p>
+            <p class="inicio-subtitulo">
+                Filmagem • Fotografia • Eventos • Momentos Inesquecíveis
+            </p>
 
         </div>
 
 
-        <div class="row g-4">
+        <!-- ================================================= -->
+        <!-- SLIDE DE FOTOS -->
+        <!-- ================================================= -->
+
+        <div id="slideEventos"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel"
+             data-bs-interval="3000">
+
+            <!-- INDICADORES -->
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#slideEventos"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Casamento">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#slideEventos"
+                        data-bs-slide-to="1"
+                        aria-label="15 Anos">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#slideEventos"
+                        data-bs-slide-to="2"
+                        aria-label="Infantil">
+                </button>
+
+            </div>
 
 
-            <!-- CASAMENTOS -->
+            <!-- FOTOS -->
+            <div class="carousel-inner">
 
-            <div class="col-md-4">
 
-                <div class="card h-100 shadow">
+                <!-- FOTO 1 -->
+                <div class="carousel-item active">
 
-                    <img
-                        src="assets/img/Casamento.jpg"
-                        class="card-img-top"
-                        alt="Fotografia de Casamento">
+                    <img src="assets/img/Casamento.jpg"
+                         class="d-block w-100"
+                         alt="Casamento">
 
-                    <div class="card-body text-center">
+                    <div class="carousel-caption">
 
-                        <h3 class="card-title">
+                        <h2>
                             Casamentos
-                        </h3>
+                        </h2>
 
-                        <p class="card-text">
-                            Eternizamos cada momento do seu casamento
-                            através da fotografia e filmagem.
+                        <p>
+                            Eternizando cada momento especial.
                         </p>
-
-                        <a href="#contato"
-                           class="btn btn-primary">
-
-                            Solicitar orçamento
-
-                        </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
+                <!-- FOTO 2 -->
+                <div class="carousel-item">
 
-            <!-- 15 ANOS -->
+                    <img src="assets/img/15-Anos.jpg"
+                         class="d-block w-100"
+                         alt="15 Anos">
 
-            <div class="col-md-4">
+                    <div class="carousel-caption">
 
-                <div class="card h-100 shadow">
-
-                    <img
-                        src="assets/img/15-Anos.jpg"
-                        class="card-img-top"
-                        alt="Fotografia de 15 Anos">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
+                        <h2>
                             15 Anos
-                        </h3>
+                        </h2>
 
-                        <p class="card-text">
-                            Transformamos sua festa de 15 anos
-                            em lembranças inesquecíveis.
+                        <p>
+                            Uma celebração para ficar na memória.
                         </p>
-
-                        <a href="#contato"
-                           class="btn btn-primary">
-
-                            Solicitar orçamento
-
-                        </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
+                <!-- FOTO 3 -->
+                <div class="carousel-item">
 
-            <!-- INFANTIL -->
+                    <img src="assets/img/infantil.jpg"
+                         class="d-block w-100"
+                         alt="Fotografia Infantil">
 
-            <div class="col-md-4">
+                    <div class="carousel-caption">
 
-                <div class="card h-100 shadow">
-
-                    <img
-                        src="assets/img/infantil.jpg"
-                        class="card-img-top"
-                        alt="Fotografia Infantil">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
+                        <h2>
                             Infantil
-                        </h3>
+                        </h2>
 
-                        <p class="card-text">
-                            Registramos os momentos especiais
-                            das crianças com carinho e criatividade.
+                        <p>
+                            Registrando momentos únicos da infância.
                         </p>
-
-                        <a href="#contato"
-                           class="btn btn-primary">
-
-                            Solicitar orçamento
-
-                        </a>
 
                     </div>
 
@@ -250,12 +215,84 @@
 
             </div>
 
+
+            <!-- BOTÃO ANTERIOR -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#slideEventos"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+                <span class="visually-hidden">
+                    Anterior
+                </span>
+
+            </button>
+
+
+            <!-- BOTÃO PRÓXIMO -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#slideEventos"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+                <span class="visually-hidden">
+                    Próximo
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- TEXTO -->
+        <!-- ================================================= -->
+
+        <div class="inicio-texto text-center mt-4">
+
+            <p class="lead">
+
+                Há mais de 15 anos, a ZIP Produções transforma
+                momentos únicos em histórias que permanecem
+                para sempre.
+
+            </p>
+
+            <p>
+
+                Trabalhamos com dedicação, criatividade e
+                profissionalismo para registrar cada detalhe
+                dos momentos mais importantes da sua vida.
+
+            </p>
+
+            <div class="desconto">
+
+                <i class="fas fa-star"></i>
+
+                DESCONTOS ESPECIAIS DE 10%
+
+                <i class="fas fa-star"></i>
+
+            </div>
+
+            <p class="desconto-texto">
+
+                Contrate nossos serviços até o final deste mês!
+
+            </p>
 
         </div>
 
     </div>
 
 </section>
+```
+
 
 
 
